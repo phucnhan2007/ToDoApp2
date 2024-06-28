@@ -37,7 +37,7 @@ const index = () => {
     setTaskData(_taskData);
   };
 
-  const goEditItem = (indexEdit: number) => () => {
+  const goEditItem = (indexEdit: number) => () => { // this is go edit item
     const _taskData = tasks[indexEdit];
     setTaskData(_taskData);
     indexTaskUpdate.current = indexEdit;
@@ -49,7 +49,7 @@ const index = () => {
     setTasks(_tasks);
     setTaskData({});
   };
-  const deleteTask = (taskId: number) => () => {
+  const deleteTask = (taskId: number) => () => { // this is delete task function
     const _tasks = tasks.filter((item: any) => item.id != taskId);
     setTasks(_tasks);
   };

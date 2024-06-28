@@ -37,19 +37,19 @@ const index = () => {
     setTaskData(_taskData);
   };
 
-  const goEditItem = (indexEdit: number) => () => {
+  const goEditItem = (indexEdit: number) => () => { // this is for go Edit Item
     const _taskData = tasks[indexEdit];
     setTaskData(_taskData);
     indexTaskUpdate.current = indexEdit;
   };
 
-  const UpdateTask = () => { //this is for update task
+  const UpdateTask = () => { //this for update task
     const _tasks = [...tasks];
     _tasks[indexTaskUpdate.current] = taskData;
     setTasks(_tasks);
     setTaskData({});
   };
-  const deleteTask = (taskId: number) => () => {
+  const deleteTask = (taskId: number) => () => { // this is for delete Task
     const _tasks = tasks.filter((item: any) => item.id != taskId);
     setTasks(_tasks);
   };

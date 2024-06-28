@@ -43,7 +43,7 @@ const index = () => {
     indexTaskUpdate.current = indexEdit;
   };
 
-  const UpdateTask = () => {
+  const UpdateTask = () => { //this is for update task
     const _tasks = [...tasks];
     _tasks[indexTaskUpdate.current] = taskData;
     setTasks(_tasks);

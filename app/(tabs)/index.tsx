@@ -49,7 +49,7 @@ const index = () => {
     setTasks(_tasks);
     setTaskData({});
   };
-  const deleteTask = (taskId: number) => () => { // this is delete task function
+  const deleteTask = (taskId: number) => () => { // this is delete task 
     const _tasks = tasks.filter((item: any) => item.id != taskId);
     setTasks(_tasks);
   };
